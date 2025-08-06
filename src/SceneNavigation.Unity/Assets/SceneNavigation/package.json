@@ -1,6 +1,6 @@
 {
     "name": "com.aaron.scene-navigation",
-    "displayName": "Scene Navigation",
+    "displayName": "SceneNavigation",
     "description": "Addressables Scene Loader",
     "version": "1.0.0",
     "unity": "6000.0",
