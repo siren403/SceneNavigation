@@ -1,0 +1,12 @@
+{
+    "name": "com.aaron.scene-navigation.r3",
+    "displayName": "Scene Navigation (R3 Extension)",
+    "description": "Addressables Scene Loader",
+    "version": "1.0.0",
+    "unity": "6000.0",
+    "license": "MIT",
+    "dependencies": {
+        "com.aaron.scene-navigation": "1.0.0",
+        "jp.hadashikick.vitalrouter": "1.7.0"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "com.aaron.scene-navigation",
+    "displayName": "Scene Navigation",
+    "description": "Addressables Scene Loader",
+    "version": "1.0.0",
+    "unity": "6000.0",
+    "license": "MIT",
+    "dependencies": {
+        "com.unity.addressables": "2.6.0",
+        "jp.hadashikick.vcontainer": "1.17.0",
+        "com.cysharp.unitask": "2.5.10",
+        "jp.hadashikick.vitalrouter": "1.7.0"
+    }
+}

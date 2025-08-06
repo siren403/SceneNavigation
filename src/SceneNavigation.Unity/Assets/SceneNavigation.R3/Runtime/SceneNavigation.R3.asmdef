@@ -1,0 +1,19 @@
+{
+    "name": "SceneNavigation.R3",
+    "rootNamespace": "",
+    "references": [
+        "SceneNavigation",
+        "VitalRouter"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "R3.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

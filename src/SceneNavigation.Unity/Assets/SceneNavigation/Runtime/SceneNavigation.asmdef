@@ -1,0 +1,20 @@
+{
+    "name": "SceneNavigation",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "UniTask",
+        "VContainer",
+        "VitalRouter"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
