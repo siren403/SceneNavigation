@@ -15,7 +15,11 @@ namespace SceneNavigation.Extensions
             var nav = new NavigatorBuilder(builder);
             configure(nav);
 
-            builder.RegisterInstance(new NavigatorOptions() { StartupRoot = nav.StartupRoot, });
+            builder.RegisterInstance(new NavigatorOptions()
+            {
+                StartupRoot = nav.StartupRoot,
+                EntryPath = nav.EntryPath,
+            });
             builder.Register<Navigator>(Lifetime.Singleton).AsSelf();
             builder.RegisterEntryPoint<NavigatorInitializer>();
         }

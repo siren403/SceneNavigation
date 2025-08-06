@@ -15,17 +15,20 @@ namespace SceneNavigation.Extensions
         private readonly IContainerBuilder _builder;
 
         public bool StartupRoot = true;
+        public string EntryPath { get; set; } = string.Empty;
 
         public NavigatorBuilder(IContainerBuilder builder)
         {
             _builder = builder;
         }
+
     }
 
     public record NavigatorOptions
     {
         public readonly string Root = "/";
         public bool StartupRoot { get; init; } = true;
+        public string EntryPath { get; init; } = string.Empty;
     }
 
 
@@ -38,9 +41,10 @@ namespace SceneNavigation.Extensions
         });
 #endif
 
-        public static void StartupRootOnlyMainScene(this NavigatorBuilder builder)
+        public static void StartupRootOnlyMainScene(this NavigatorBuilder builder, string entryPath)
         {
             builder.StartupRoot = SceneManager.GetSceneAt(0).buildIndex == 0;
+            builder.EntryPath = entryPath;
         }
 
         public static async UniTask CheckForUpdates(this Navigator navigator)

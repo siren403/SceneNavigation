@@ -83,6 +83,11 @@ namespace SceneNavigation
             if (_options.StartupRoot)
             {
                 await Startup();
+
+                if (!string.IsNullOrEmpty(_options.EntryPath))
+                {
+                    await To(_options.EntryPath);
+                }
             }
 
             _ = _router.PublishAsync(new PostStartUpCommand());
@@ -117,6 +122,19 @@ namespace SceneNavigation
 #if USE_ZLOGGER
                     _logger.LogWarning("Impossible unload root path");
 #endif
+                }
+            }
+            else
+            {
+                for (var i = 0; i < SceneManager.loadedSceneCount; ++i)
+                {
+                    var unmanagedScene = SceneManager.GetSceneAt(i);
+                    if (unmanagedScene.buildIndex == 0)
+                    {
+                        continue;
+                    }
+
+                    await SceneManager.UnloadSceneAsync(unmanagedScene);
                 }
             }
 
