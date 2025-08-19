@@ -1,0 +1,22 @@
+{
+    "name": "GettingStarted",
+    "rootNamespace": "",
+    "references": [
+        "SceneNavigation",
+        "VContainer",
+        "VitalRouter",
+        "UniTask",
+        "Unity.Addressables",
+        "Unity.ResourceManager",
+        "LitMotion"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

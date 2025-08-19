@@ -18,7 +18,7 @@ namespace SceneNavigation
 
         public UniTask StartAsync(CancellationToken cancellation = default)
         {
-            return _navigator.Initialize();
+            return _navigator.InitializeAsync();
         }
     }
 }

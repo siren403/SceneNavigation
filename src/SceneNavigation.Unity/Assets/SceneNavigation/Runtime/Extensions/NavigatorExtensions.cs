@@ -68,8 +68,8 @@ namespace SceneNavigation.Extensions
                 await Addressables.UpdateCatalogs(true, updates.Result);
             }
 
-            await navigator.Clear();
-            await navigator.Startup();
+            await navigator.ClearAsync();
+            await navigator.StartupAsync();
         }
     }
 }
